@@ -10,15 +10,6 @@ console.log(
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-<<<<<<< HEAD:src/lib/supabase.js
-export const supabase =
-  console.log("SUPABASE URL:", import.meta.env.VITE_SUPABASE_URL);
-console.log("SUPABASE KEY EXISTS:", !!import.meta.env.VITE_SUPABASE_ANON_KEY);
-  createClient(
-    supabaseUrl,
-    supabaseAnonKey
-  );
-=======
 // Safety check
 if (!supabaseUrl) {
   console.error("❌ VITE_SUPABASE_URL is missing");
@@ -32,4 +23,3 @@ export const supabase = createClient(
   supabaseUrl,
   supabaseAnonKey
 );
->>>>>>> 3afb548 (debug supabase env):frontend/src/lib/supabase.js
